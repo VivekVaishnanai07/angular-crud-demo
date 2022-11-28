@@ -36,4 +36,10 @@ export class PostListService {
     };
     return this.http.put(`https://dummyapi.io/data/v1/post/${id.id}`, data, { headers: header })
   }
+  paginationLimit(data: any, page: any) {
+    const header = {
+      "app-id": "627392069acddf4d5d7796f9"
+    };
+    return this.http.get(`https://dummyapi.io/data/v1/post/?limit=${data}&page=${page}`, { headers: header })
+  }
 }
