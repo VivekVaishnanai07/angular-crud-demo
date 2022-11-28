@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" style="height: 50px;">
+    <button mat-button class="navbar" routerLink="/app/home" routerLinkActive="active">Home</button>
+    <button mat-button class="navbar" routerLink="/app/post" routerLinkActive="active">Post</button>
+    <button mat-button class="navbar" routerLink="/app/create-post" routerLinkActive="active">Add Post</button>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
+        (click)="onLogout()">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
